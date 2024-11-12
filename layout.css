@@ -1,0 +1,205 @@
+/** {
+    font-family:"";
+}*/
+body {
+    overflow-x: hidden;
+
+}
+
+/* .section-1{
+    background: linear-gradient(180deg, #95ce70 0%, 14.3625%, #a5d78e 28.7249%, 43.2149%, #b4e1a6 57.7049%, 70.8197%, #c9e9c0 83.9344%, 91.9672%, #f9fdfe 100%);
+
+}
+.section-2{
+    background: linear-gradient(360deg, #95ce70 0%, 14.3625%, #a5d78e 28.7249%, 43.2149%, #b4e1a6 57.7049%, 70.8197%, #c9e9c0 83.9344%, 91.9672%, #f9fdfe 100%);
+
+} */
+.main-content{
+    min-height: calc(100vh - 152.5px);
+}
+.mainheader {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   
+
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn.active{
+    box-shadow: none;
+}
+.btn:first-child:active{
+    border-color: transparent;
+}
+/* .home-hdr{    
+    background: url(img/intelxl-bg\ -\ Copy.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+.about-hdr{    
+    background: url(img/about-bg.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-hdr{    
+    background: url(img/contact-us.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; 
+    -webkit-transition: all 0.4s linear;
+}
+.ix-nav{
+    padding-top: 20px;
+    z-index: 1; 
+}
+
+.ix-fixed {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 1px -16px 15px 11px;
+    padding: 0;
+}
+.ix-fixed .nav-link{
+    color: #009837;
+    font-size: 18px;
+    font-weight: 600;
+}
+.ix-nav .nav-link:hover{
+    color: #009837;
+}
+.ix-fixed .nav-item.active {
+    border-bottom: 5px solid #009837;
+    background-color: #e6f7e9;
+}
+.ix-moved .nav-item.active{
+    background-color: #009837;
+    border-radius:40px ;
+}
+.ix-moved .nav-item.active a:hover{
+    color: #ffffff;
+}
+nav ul li{
+    display: inline-flex;
+    padding: 10px 20px 10px 20px;
+}
+.nav-link{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0%;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.ix-fixed .nav-item:hover  {
+    color: #146833;
+    border-bottom: 5px solid #009837;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-item:active,
+.dropdown-item.active {
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: none;
+}
+
+.Servicesdropdown {
+    border-top: 1px solid #0088cc;
+    border-radius: 0px;
+}
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    left: 0;
+    /* Additional styling as needed */
+}
+
+.desktopViewimg {
+    width: 120px;
+}
+
+.unwnt-lnk {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.offcanvas-body .nav-item{
+    border-bottom: 1px solid #dddddd4a;
+}
+.offcanvas-body .nav-item:hover{
+    color: #009837;
+}
+.offcanvas-body .nav-item.active{
+    background-color: #009837;
+    color: #fff;
+}
+.ix-moved .custom-toggler{
+    background-color: #ffffff; 
+    border-color: #ffffff; 
+    color: #000000; 
+    
+}
+.ix-moved .custom-toggler:hover{
+    background-color: #f8f9fa;
+}
+/* ====footer======= */
+footer {
+    background: #d9e8ed;
+    z-index: 20;
+}
+
+.footerContent {
+    color: #555555;
+    font-size: 14px;
+}
+
+/*=================== */
+
+#scrolltop {
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    display: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #898888;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+    #scrolltop:hover {
+        background: #6d6c6c;
+    }

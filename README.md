@@ -1,2 +1,1 @@
-# INTELXLWebsite
-INTELXLWebsite
+# IntelXLWebsite

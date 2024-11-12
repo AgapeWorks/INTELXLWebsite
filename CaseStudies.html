@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"
+            integrity="sha512-b6lGn9+1aD2DgwZXuSY4BhhdrDURVzu7f/PASu4H1i5+CRpEalOOz/HNhgmxZTK9lObM1Q7ZG9jONPYz8klIMg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Agape works - CaseStudies</title>
+    <link rel="icon" type="image/x-icon" href="img/AW-favicon.ico" />
+</head>
+
+<body>
+    <!-- ============---Header start----=================== -->
+    <header class="mainheader">
+        <!-- =================---Desktop----====================== -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="desktopViewimg"  loading="lazy" src="img/Intelxl-logo.png" alt="Intelxl" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="navbar" class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-4 py-1" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 py-1" href="About.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="navServices" class="nav-link dropdown-toggle px-4 py-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                                <li><a class="dropdown-item disabled" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                                <li><a class="dropdown-item disabled" href="WorkForce.html">Workforce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 py-1 disabled-item" href="ourClient.html">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 py-1 active" href="CaseStudies.html">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 py-1" href="Contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--offcanvas for mobile responsive-->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+             aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul id="navbar" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link offcanvas-link px-4 py-1" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link offcanvas-link px-4 py-1" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navServices" class="nav-link offcanvas-link dropdown-toggle px-4 py-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                            <li><a class="dropdown-item disabled" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                            <li><a class="dropdown-item disabled" href="WorkForce.html">Workforce</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link offcanvas-link px-4 py-1 disabled-item" href="ourClient.html">Our Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link offcanvas-link px-4 py-1 active" href="CaseStudies.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link offcanvas-link px-4 py-1" href="Contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- ============---Header end----=================== -->
+    <!-- ============------Body start-----============= -->
+    <div class="container-fluid main-content p-0">
+    <div class="caseStudies background pb-5">
+        <div>
+            <h1 class="heading">Case Studies</h1>
+        </div>
+        <div class="content">
+            <p class="mb-0">Success client stories !</p>
+        </div>
+
+
+
+        <div class="main">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="AIimg/AI.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">How Agape Helped Customer for Cloud Migration?</h5>
+                                <p class="card-text"><b>Company Profile: </b> Leading Automobile Dealer in US.</p>
+                                <p class="card-text"><b>Technology: </b> Microsoft Share Point, Microsoft Azure</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4  px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="AIimg/AI.webp" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Data Management and Analytics using Business Intelligence Tool</h5>
+                                <p class="card-text"><b>Company Profile: </b> Leading Jewelers in US.</p>
+                                <p class="card-text"><b>Technology: </b> Qlik Sense, Qlik View.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/card1.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Microsoft Exchange Server Upgradation Analysis and Solution</h5>
+                                <p class="card-text"><b>Company Profile: </b> Leading Jewelry Dealer in US.</p>
+                                <p class="card-text"><b>Technology: </b> Microsoft Exchange Server</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/card2.jpeg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Application Support and Maintenance Services for a leading Telecom Company</h5>
+                                <p class="card-text"><b>Company Profile: </b> Leading Telecom Company in US.</p>
+                                <p class="card-text"><b>Technology: </b> Java, Unix, Oracle WebLogic Server.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/card3.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Umbraco as a Service in Cloud</h5>
+                                <p class="card-text"><b>Company Profile: </b> Leading Website Design and Development Company in US.</p>
+                                <p class="card-text"><b>Technology: </b> Umbraco CMS, Microsoft Azure.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/card4.jpeg" alt="...">
+                        <div class="card-body ">
+                            <div class="card-contents">
+                                <h5 class="card-title">Travel and Efficient Holiday Management based on Analytics Framework</h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> A Los Angeles-based US travel group with a global
+                                    affiliate network is one of the nationâ€™s premier travel agencies catering to the entertainment
+                                    industry, corporate world, special interest groups and sophisticated leisure traveler on a
+                                    referral-only basis.
+                                    With over thirty years of experience, the group is recognized for its unparalleled services,
+                                    discerning savvy and personal approach to creating elaborate customized travel experiences to each of
+                                    its clients.
+                                </p>
+                                <p class="card-text">
+                                    <b>Technology: </b> All development, coding and testing was done on Windows Server
+                                    platform.
+                                    We used Umbraco for CMS, .NET, XML, HTML, Web Services and jQuery.
+                                    IT business consulting, UI and UX development.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/card5.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">
+                                    Mobile based App using Audio Services in Cloud Technology for a Leading Company
+                                    in US
+                                </h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> An evangelist group created audio CDs using the voices of
+                                    well-known actors and was selling the CDs as a product in many of the supermarkets in USA.
+                                </p>
+                                <p class="card-text">
+                                    <b>Technology: </b> All development, coding and testing was done on Windows Server
+                                    platform.
+                                    We used Umbraco for CMS, .NET, XML, HTML, Web Services and jQuery.
+                                    IT business consulting, UI and UX development.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="SDimg/Robotictype.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Migrated Sitecore Website Using Open Source CMS</h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> A Leading bank in US
+                                    The client is a New Jersey-based nationalized bank with USD 2.7 billion worth of assets. This bank
+                                    offers a complete line of commercial, business, and consumer banking products and services. It is also
+                                    a global leader in corporate governance, and one of Americaâ€™s 100 Most Trustworthy Companies.
+                                </p>
+                                <p class="card-text"><b>Technology: </b> Site Core, Umbraco 7.0</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="workforce/card1.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Testing a Responsive Website Using an Automation Tool</h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> A Leading bank in US
+                                    The client is a New Jersey-based nationalized bank with USD 2.7 billion worth of assets. This bank
+                                    offers a complete line of commercial, business, and consumer banking products and services. It is also
+                                    a global leader in corporate governance, and one of Americaâ€™s 100 Most Trustworthy Companies.
+                                </p>
+                                <p class="card-text"><b>Technology: </b> Microsoft Share Point, Microsoft Azure</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="workforce/card2.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Dynamic Reporting</h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> An analytics firm that delivers web-based solutions for
+                                    insurance intermediaries and underwriting partners.
+                                </p>
+                                <p class="card-text"><b>Technology: </b> PHP, UX</p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="workforce/card3.png" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Website Design Using CMS Platform</h5>
+                                <p class="card-text"><b>Company Profile: </b> Texas based real-estate Company.</p>
+                                <p class="card-text">
+                                    <b>Technology: </b> NET Web Services, JqWidgets UI Library, Geo-coding, Bing, Data
+                                    Science, MapQuest, SQL Server and JavaScript.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 px-3 py-2">
+                    <div class="card cardanim">
+                        <img src="workforce/consultancy service.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-contents">
+                                <h5 class="card-title">Web App Design</h5>
+                                <p class="card-text">
+                                    <b>Company Profile: </b> A global leader in the field of insurance brokerage and
+                                    risk management.
+                                </p>
+                                <p class="card-text">
+                                    <b>Technology: </b> All development, coding and testing was done on Windows Server
+                                    platform.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="connectus">
+            <h3 class="text-center text-light">Do You Wish to Work with Us?</h3>
+            <div class="connectbtn"><button>CONNECT US NOW!</button></div>
+        </div>
+    </div>
+    <!-- ====================--modal start--==================== -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card-contents">
+                        <h5 class="card-title">Application Support and Maintenance Services for a leading Telecom Company</h5>
+                        <p class="card-text"><b>Company Profile: </b> Leading Telecom Company in US.</p>
+                        <p class="card-text">
+                            <b>Technology: </b> Java, Unix, Oracle WebLogic Server. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Molestias, quisquam deleniti magni iste ex, voluptates eum aperiam animi
+                            tenetur voluptate impedit ipsam, consectetur reiciendis sit corporis amet nihil nam assumenda.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ====================--modal end--==================== -->
+    <!-- ============------Body end-----============= -->
+   </div>
+    <!-- ======footer===== -->
+    <footer>
+        <div class="container">
+            <div class="footerContent py-4 text-center"> © Copyright 2023 AgapeWorks Technology. All Rights Reserved. </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

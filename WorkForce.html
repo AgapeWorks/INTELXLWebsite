@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"
+    integrity="sha512-b6lGn9+1aD2DgwZXuSY4BhhdrDURVzu7f/PASu4H1i5+CRpEalOOz/HNhgmxZTK9lObM1Q7ZG9jONPYz8klIMg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Agape works - Workforce</title>
+</head>
+
+<body>
+  <!-- ============---Header start----=================== -->
+  <header class="mainheader">
+    <!-- =================---Desktop----====================== -->
+    <nav class="navbar py-0 navbar-expand-lg bg-light d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="desktopViewimg"  loading="lazy" src="img/Intelxl-logo.png" alt="Intelxl" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="navServices" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="Servicesdropdown dropdown-menu">
+                <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                <li><a class="dropdown-item active" aria-current="page" href="WorkForce.html">Workforce</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourClient.html">OUR CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CaseStudies.html">CASE STUDIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactus.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- =================----Mobile, tab----====================== -->
+    <nav class="navbar navbar-dark  d-block d-lg-none">
+      <div class="container-fluid">
+        <a class="mobile navbar-brand" href="#"> <img class="mobileViewimg" src="img/Agapelogo.png"
+            alt="agapeworks Technology" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="fas fa-bar navbar-toggler-icon"><i class="fa-solid fa-bars text-dark"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="Index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                  <li><a class="dropdown-item" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                  <li><a class="dropdown-item" aria-current="page" href="WorkForce.html">Workforce</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourClient.html">OUR CLIENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CaseStudies.html">CASE STUDIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contactus.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- ============---Header end----=================== -->
+  <div class="container-fluid main-content p-0">
+     <!-- ============------Body start-----============= -->
+  <div class="consultingservicebody background pb-5">
+    <div>
+      <h1 class="heading">Consulting Services</h1>
+    </div>
+    <div class="mainimage"><img src="/workforce/consultancy service.jpg" alt="type" class="img-fluid"></div>
+    <div class="content">
+      <p class="mb-0">The corporate world is becoming dynamic and overly competitive with time. As an enterprise, you
+        need to develop and implement strategies that help you stay abreast and ahead of the competition. This is what
+        we can help you with!</p>
+    </div>
+    <div class="main">
+      <div class="first py-4 px-5">
+        <p class="mt-3">
+          At KBS, our experienced, knowledgeable and dedicated team can help you improve business productivity while
+          securing an edge over the competition. We can provide you with quality guidance and consultancy every step of
+          the way, helping you foster business growth and achieve both your short-term and long-term goals,
+          strategically.</p>
+        <p>Take a look at some of the business areas where our experts can provide you with support and advisory
+          services:</p>
+      </div>
+      <div class="second py-3 px-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4  p-2">
+            <div class="card cardanim">
+              <img src="workforce/card1.jpg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Staff Augmentation</a></h5>
+                <p class="card-text">The success of any organization largely depends on its workforce. To progress
+                  forward, you need highly skilled, competent, well-trained and qualified people</p>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4  p-2">
+            <div class="card cardanim">
+              <img src="workforce/card2.jpg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Information Technology Management</a></h5>
+                <p class="card-text">To increase operational efficiency and stay competitive, it is important that you
+                  continuously improve your existing IT landscape.</p>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4   p-2">
+            <div class="card cardanim">
+              <img src="workforce/card3.png" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Innovation</a></h5>
+                <p class="card-text">KBS is synonymous to innovation. We are driven by passion and fueled by innovation.
+                  We believe that innovation is key to breathing life into your business and the services it offers.</p>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+    <div class="connectus">
+      <h4 class="text-center text-light">Do You Wish to Work with Us?</h4>
+      <div class="connectbtn"><button>CONNECT US NOW!</button></div>
+    </div>
+  </div>
+  <!-- ============------Body end-----============= -->
+  </div>
+
+  <!-- ======footer===== -->
+  <footer>
+    <div class="container">
+      <div class="footerContent py-4 text-center"> © Copyright 2022 KBS Solutions LLC. All Rights Reserved. </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

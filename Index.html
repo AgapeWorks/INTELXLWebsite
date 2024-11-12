@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"
+            integrity="sha512-b6lGn9+1aD2DgwZXuSY4BhhdrDURVzu7f/PASu4H1i5+CRpEalOOz/HNhgmxZTK9lObM1Q7ZG9jONPYz8klIMg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>IntelXL | Company</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
+</head>
+
+<body>
+    <!-- ============---Header start----=================== -->
+    <header class="mainheader home-hdr">
+        <video autoplay="autoplay" loop="" muted="" playsinline="" id="bg-video" class="vd-width"><source src="img/pexels_videos_2611250 (2160p).mp4" type="video/mp4"></video>
+        <!-- =================---Desktop----====================== -->
+        <nav class="ix-nav ix-moved navbar navbar-expand-lg">
+            <div class="container">
+             <div class="logo mx-2">
+                 <a class="navbar-brand" href="#">
+                     <img class="desktopViewimg" loading="lazy" src="img/intelxl-high-resolution-logo.png" alt="Intelxl" />
+                 </a>
+             </div>
+             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+             <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ms-auto">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="Index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="About.html">About us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="SoftwareDevelopment.html">Services</a>
+                    </li>
+                     <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                            <li class="disabled"><a class="dropdown-item disabled" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                            <li class="disabled"><a class="dropdown-item disabled" href="WorkForce.html">Workforce</a></li>
+                        </ul>
+                      </li> -->
+                     <li class="nav-item">
+                         <a class="nav-link unwnt-lnk" href="ourClient.html">Our Clients</a>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link" href="Contactus.html">Contact Us</a>
+                     </li>
+                 </ul>
+             </div>
+            </div>
+         </nav>
+         <div class="carousel-caption">
+                    <div class="captions">
+                        <!-- <h1 class="text-2">IntelXL</h1> -->
+                        <div class="text-2">We're making educational experiences better for everyone.</div>
+                        <p>A full 360º of solutions to help you create more innovative and immersive eLearning experiences.</p>
+                    </div>
+                    <div class="btn  btn-lg text-white abt-btn btn-success"><a class="" href="About.html">Read More <i class="fa-solid fa-arrow-right"></i></a></div>                    
+         </div>
+        
+
+        <!--offcanvas for mobile responsive-->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel" data-bs-backdrop="true">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active p-2 ps-5">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="SoftwareDevelopment.html">Services</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                            <li class="disabled"><a class="dropdown-item disabled" href="AI.html">Artificial Intelligence and Analytics</a></li>
+                            <li class="disabled"><a class="dropdown-item disabled" href="WorkForce.html">Workforce</a></li>
+                        </ul>
+                    </li>
+                    -->
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link unwnt-lnk" href="ourClient.html">Our Clients</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="Contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+       
+    </header>
+    <!-- ============---Header end----=================== -->
+ <div class="container-fluid main-content p-0" id="benefits">
+    <section >
+       <!-- ========--carousel--======== -->
+       <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner parallax">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/programming-background.jpg" class="carousel-img img-fluid d-block w-100"  alt="...">
+                <div class="carousel-caption">
+                    <div class="captions">
+                        <div class="text-2">We're making educational experiences better for everyone.</div>
+                        <img src="img/carouselimg/line.png">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Team/Team-1.jpg" class="carousel-img img-fluid d-block w-100"  alt="...">
+                <div class="carousel-caption">
+                    <div class="captions">
+                        <div class="text-2">Your second caption goes here.</div>
+                        <img src="img/carouselimg/line.png">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/Team/Team-2.jpg" class="carousel-img img-fluid d-block w-100"  alt="...">
+                <div class="carousel-caption">
+                    <div class="captions">
+                        <div class="text-2">Your third caption goes here.</div>
+                        <img src="img/carouselimg/line.png">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div> -->
+    
+</section>   
+<section class="section-1">
+    
+        <div class="container py-5">
+            <div class="text-center"><h2 class="our-service-text">Why Choose IntelXL</h2>
+            <p>We pride ourselves on being more than just a service provider; we are your strategic partner. 
+                Our team of seasoned experts works hand-in-hand with your business to understand its unique needs and challenges. 
+                This collaborative approach allows us to craft authentic and effective strategies specifically designed to help you achieve your objectives.
+            </p>
+        </div>
+            <div class="container  grid-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card home-card">
+                            <div class="card-body cntnt-bdy text-center my-3">
+                                <div>
+                                    <img class="mb-3" src="img/project-management.png" alt="Innovative Icon" style="width:50px;height:50px;">
+                                    <h5>Expertise</h5>
+                                </div>
+                                <div class="card-ovrly overlay">
+                                    <div class="ovrly-txt d-flex align-items-center justify-content-center">Our team includes experienced industry veterans in technology and business management.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card home-card">
+                            <div class="card-body cntnt-bdy text-center my-3">
+                                <div>
+                                    <img class="mb-3" src="img/solution.png" alt="Solutions Icon" style="width:50px;height:50px;">
+                                    <h5>Client-Centric</h5>
+                                </div>
+                                <div class="card-ovrly overlay">
+                                    <div class="ovrly-txt d-flex align-items-center justify-content-center">Your success is our commitment, surpassing expectations and meeting specific needs.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card home-card">
+                            <div class="card-body cntnt-bdy text-center my-3">
+                                <div>
+                                    <img class="mb-3" src="img/global-network.png" alt="Effective Icon" style="width:50px;height:50px;">
+                                    <h5>Global Reach</h5>
+                                </div>
+                                <div class="card-ovrly overlay">
+                                    <div class="ovrly-txt d-flex align-items-center justify-content-center">With a global development center, we can handle projects worldwide.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card home-card">
+                            <div class="card-body cntnt-bdy text-center my-3">
+                                <div>
+                                    <img class="mb-3" src="img/increase.png" alt="Hi-Tech Icon" style="width:50px;height:50px;">
+                                    <h5>Results-Driven</h5>
+                                </div>
+                                <div class="card-ovrly overlay">
+                                    <div class="ovrly-txt d-flex align-items-center justify-content-center">We measure our success by the real-world impact we make on your business. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    
+        <!-- ========-- Services--======== -->
+        <div class="container-fluid parallax top-parallax d-flex align-items-center justify-content-center  px-5">
+            <div class="row d-flex align-items-center justify-content-center "> 
+                <div class="col-md-6">
+                    <div class="mt-5 mb-5 border border-1 rounded-3 p-3 course-cndnt">
+                        <div class="our-team-content ">
+                            <h2 class="our-service-text text-center">Our mission</h2>
+                            <div class="vision-txt">
+                                <ul>
+                                    <li class="my-2">To empower individuals through innovative and accessible learning solutions.</li>
+                                    <li class="my-2">Striving to cultivate a dynamic online education environment.</li>
+                                    <li class="my-2">To leverage cutting-edge technology for enhanced learning experiences.</li>
+                                    <li class="my-2"> Providing expert-led content for high-quality learning.</li>
+                                    <li class="my-2">Committed to democratizing knowledge.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-5 mb-5 border border-1 rounded-3 p-3 course-cndnt">
+                        <div class="our-team-content">
+                            <h2 class="our-service-text text-center">Our vision</h2>
+                            <div class="vision-txt">
+                                <ul>
+                                    <li class="my-2">IntelXL Learning envisions a world where education breaks boundaries.</li>
+                                    <li class="my-2">Committed to redefining learning through innovation.</li>
+                                    <li class="my-2">Making knowledge accessible to everyone, regardless of location or background.</li>
+                                    <li class="my-2">Aspiring to inspire a global community of lifelong learners.</li>
+                                    <li class="my-2">Driven by innovation to enhance the learning experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+              </div>
+        </div>
+     
+    
+    </section>
+<section class="section-2">
+   
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="px-5 col-md-5">
+                <img class="img-fluid" src="img/academic-hat.jpg" alt="Our Team Image">
+            </div>
+            <div class="col-md-6">
+                <div class="mt-5 mb-5 border border-1 rounded-3 p-3 course-cndnt">
+                    <h2 class="our-team-text">Explore</h3>
+                    <h6>Unlock Your Potential with Skilled Mentors!</h6>
+                    <p>Embark on your online learning journey with IntelXL Learning and experience the power of 
+                        knowledge through our trial-only free short-term basic courses across various sought-after subjects. 
+                        Dive into valuable lessons and gain insights without any upfront costs. Start your trial today and discover 
+                        the possibilities that await you on the path to skill enhancement and personal development
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class=" pb-5">
+            <h2 class="text-center  our-service-text">Know About IntelXL Platform</h2>
+            <p class="text-center text-secondary px-5 my-3">IntelXL Online Tutoring Services offers personalised and convenient tutoring for 
+                students in various academic fields. Our experienced and qualified tutors provide one-on-one instruction tailored to the 
+                student's learning style and needs. We offer flexible scheduling and affordable rates, making our services accessible to all students. 
+                With IntelXL Online Tutoring Services, students can receive extra support and guidance to excel in their studies and achieve their academic goals.</p>
+        </div>
+
+    </div>
+</section>
+    <!-- ====banner==== -->
+    <!-- ====offer section==== -->
+    <div class="offer parallax bot-parallax">
+        <div class="offer-head text-center">
+            <h2>Discover Our Services</h2>
+        </div>
+        <p class="text-center">
+            Embark on a transformative software solution experience with IntelXL. 
+            We are committed to delivering cutting-edge solutions to individuals worldwide. At IntelXL, 
+            innovation meets excellence in software services. Our dedication goes beyond competitive offerings; 
+            it encompasses the delivery of high-quality software solutions. Explore the three key domains we focus on, 
+            shaping the trajectory of your technological journey and personal development.
+
+        </p>
+        <div class="row offer-img">
+            <div class="col-md-4">
+                <div class="zoom"><img src="img/offerImg-1.png" /></div>
+                <div>
+                    <h6>Technology</h6>
+                </div>
+                <div>Come and discover our science of art</div>
+            </div>
+            <div class="col-md-4">
+                <div class="zoom"><img src="img/offerImg-2.png" /></div>
+                <div>
+                    <h6>Solutions</h6>
+                </div>
+                <div>IT enabled business process</div>
+            </div>
+            <div class="col-md-4">
+                <div class="zoom"><img src="img/offerImg-3.png" /></div>
+                <div>
+                    <h6>Consulting</h6>
+                </div>
+                <div>Understanding your potentiality better</div>
+            </div>
+        </div>
+      
+    </div>
+    <div class="contact-detail">
+        <div class="last-heading">
+            <h4 class="text-center our-service-text">Does your Business need Technology Transformation?</h4>
+        </div>
+        <p class="text-center last-heading-p">
+            To find out more about what we can do for your Learning, contact us today
+            at
+            <b><a class="mail-id" href="mailto:help@IntelXLlearning.com">help@IntelXLlearning.com</a></b>
+        </p>
+      <div class="row "> 
+        <div class="col-md-6">
+            <div class="mt-5 mb-5 border border-1 rounded-3 p-3 course-cndnt">
+                <div class="detials">
+                    <h5>IntelXL</h5>
+                    <p><strong>DALLAS</strong></p>
+                    <div class="d-flex">
+                        <div style="color: #009837"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="mx-4">
+                            <address>
+                                <a href="https://www.google.com/maps/place/Downy+Cup+Dr,+Frisco,+1st+Floor,+TX+75035" target="_blank" class="us-address">
+                                    Downy Cup Dr,<br />
+                                    Frisco,<br />
+                                    1st Floor,<br />
+                                    TX, 75035
+                                </a>
+                            </address>
+                            <div class="icon-No mb-4">
+                                <i class="fa-solid fa-phone me-3"></i><a class="mob-num" href="tel:+919876543210">09876543210</a>
+                            </div>
+                            <div class="icon-No mb-4">
+                                <i class="fa-solid fa-envelope me-3"></i><a class="mail-id" href="mailto:help@IntelXLlearning.com">help@IntelXLlearning.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mt-5 mb-5 border border-1 rounded-3 p-3 course-cndnt">
+                <div class="detials">
+
+                    <h5>IntelXL Technology, India</h5>
+                    <p><strong>NAGERCOIL</strong></p>
+                    <div class="d-flex">
+                        <div style="color: #009837"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="mx-4">
+                            <address>
+                                <a href="https://www.google.com/maps/place/Elanthavilai,+Pallam,+Nagercoil-629602" target="_blank" class="ind-address">
+                                    Alan villa,<br/>
+                                    Elanthavilai,<br />
+                                    Pallam (P.O),<br />
+                                    Nagercoil-629602
+                                </a>
+                            </address>
+                            
+                <div class="icon-No mb-4">
+                    <i class="fa-solid fa-phone me-3"></i><a class="mob-num" href="tel:+919876543210">09876543210</a>
+                </div>
+                <div class="icon-No mb-4">
+                    <i class="fa-solid fa-envelope me-3"></i><a class="mail-id" href="mailto:help@IntelXLlearning.com">help@IntelXLlearning.com</a>
+                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+       </div>
+ </div>
+    <!-- ======footer===== -->
+    <footer>
+        <div class="container">
+            <div class="footerContent py-4 text-center"> © Copyright 2023 IntelXL. All Rights Reserved. </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--  <div class="ms-auto">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link"  asp-controller="Home" asp-action="Index">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  asp-controller="Home" asp-action="Privacy">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">OUR CLIENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">CASE STUDIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div> -->

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"
+    integrity="sha512-b6lGn9+1aD2DgwZXuSY4BhhdrDURVzu7f/PASu4H1i5+CRpEalOOz/HNhgmxZTK9lObM1Q7ZG9jONPYz8klIMg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Agape works - AI</title>
+</head>
+
+<body>
+  <!-- ============---Header start----=================== -->
+  <header class="mainheader">
+    <!-- =================---Desktop----====================== -->
+    <nav class="navbar py-0 navbar-expand-lg bg-light d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="desktopViewimg"  loading="lazy" src="img/Intelxl-logo.png" alt="Intelxl" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="navServices" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="Servicesdropdown dropdown-menu">
+                <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                <li><a class="dropdown-item active" aria-current="page" href="AI.html">Artificial Intelligence and
+                    Analytics</a></li>
+                <li><a class="dropdown-item" href="WorkForce.html">Workforce</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourClient.html">OUR CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CaseStudies.html">CASE STUDIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactus.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- =================----Mobile, tab----====================== -->
+    <nav class="navbar navbar-dark  d-block d-lg-none">
+      <div class="container-fluid">
+        <a class="mobile navbar-brand" href="#"> <img class="mobileViewimg" src="img/Agapelogo.png"
+            alt="agapeworks Technology" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="fas fa-bar navbar-toggler-icon"><i class="fa-solid fa-bars text-dark"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="Index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SERVICES
+                </a>
+                <!-- <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="SoftwareDevelopment.html">Software Development</a></li>
+                  <li><a class="dropdown-item" aria-current="page" href="AI.html">Artificial Intelligence and
+                      Analytics</a></li>
+                  <li><a class="dropdown-item" href="WorkForce.html">Workforce</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourClient.html">OUR CLIENTS</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="CaseStudies.html">CASE STUDIES</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="Contactus.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- ============---Header end----=================== -->
+  <div class="container-fluid main-content p-0">
+  <!-- ============------Body start-----============= -->
+  <div class="AIbody background pb-5">
+    <div>
+      <h1 class="heading">Artificial Intelligence and Analytics</h1>
+    </div>
+    <div class="mainimage"><img src="/AIimg/AI.jpg" alt="type" class="img-fluid"></div>
+    <div class="content">
+      <h4 class="text-dark  cardanim">Creative Innovation Technology Group Initiative!</h4>
+      <p class="mb-0  cardanim">We have group of Engineers who work in our Next Generation Architecture like Machine Learning,
+        Neural Networks, Human- Robot/Human -Computer interaction, Data science, Applied Mathematics and Computer
+        Vision.</p>
+    </div>
+
+
+
+    <div class="main">
+      <div class="first  py-4 px-5">
+        <div class="py-2">
+          <h3 class="textleft">KBS Implement Intelligence Systems and provide smarter solutions for your Enterprise</h3>
+        </div>
+        <div>
+          <h4 class="cardanim"><b>Solutions offered: –</b></h4>
+          <ul class="textleft">
+            <li>AI/NLP based solutions for enterprise</li>
+            <li>Digital Assistant solution</li>
+            <li>Robotic Process Automation</li>
+            <li>Support Vector Machines/Random forest Classifiers</li>
+            <li>Regressions/Fuzzy Logic/Genetic Algorithms</li>
+            <li>Sales Optimization</li>
+            <li>Route Navigation and Optimization</li>
+            <li>Search Algorithms</li>
+            <li>Home Automation</li>
+            <li>Data Scrapping</li>
+            <li>Elastic Search</li>
+            <li>Python</li>
+            <li>R Programming</li>
+            <li>Java, Play, Scala</li>
+            <li>Text Mining, NLP (Natural Language Processing), Social Media Analytics</li>
+            <li>Big Data Platforms – Hadoop, MongoDb, Hive, Spark, Scala.</li>
+            <li>IoT</li>
+          </ul>
+        </div>
+        <div>
+          <p class="textleft">
+            Accelerate your business transition to IoT-based infrastructure to stay competitive and boost your
+            organizational profitability. IoT, also known as the â€˜Internet of Thingsâ€™, is a rapidly growing
+            phenomenon that is taking the corporate world by storm. It can be best defined as a solid network of
+            properly embedded physical objects featuring unmatched connectivity. This technological connectivity goes
+            beyond machine to machine (M2M) communication, covering domains, protocols and even applications.</p>
+          <p class="textleft">
+            The Internet of Things largely focuses on interconnecting and integrating uniquely-identifiable deployed
+            technological devices within the current internet infrastructure. IoT is all set to transform both local and
+            global industries by bringing networking technologies together, especially in places where it was once
+            considered impractical or unavailable.</p>
+          <p class="textleft">The concept of IoT is proving to be a â€˜driving forceâ€™ for creating new and cutting-edge business
+            models, improving the global society in unimaginable ways. Adapting an IoT-based infrastructure is not just
+            vital but crucial for success. By switching to IoT-based infrastructure, you can integrate, connect, manage
+            as well as control your devices. You can also simultaneously gain deeper and more valuable business insights
+            with analytics on IoT data which was practically impossible previously.</p>
+          <p class="textleft">
+            According to IDC (International Data Corporation), the world market of the Internet of Things is expected to
+            grow by nearly 19 percent annually and across diverse industries. Analysts also estimate that by 2020, there
+            will be approximately 50 billion integrated and interconnected devices.</p>
+          <p class="textleft">
+            As the phenomenon is new, by making the shift to IoT-based infrastructure now, you can easily gain a
+            competitive edge and strong market foothold. Also, with the help of OMA powered protocols, you can optimize
+            the connectivity offered by IoT to its full potential and transform your interconnected devices into
+            intelligent and smarter objects that provide you with accurate and real-time analytics, strategic insights
+            and even actionable intelligence, all of which is much needed to make well-informed decisions in a timely
+            manner and that too, confidently.</p>
+          <p class="textleft">If youâ€™re interested in switching and transitioning to Intelligent Systems, then get in touch with us
+            today! At KBS Tech Solutions, we can provide you with quality advice and support services to transform your
+            current organizational landscape into an IoT-based infrastructure.</p>
+          <p class="textleft">The perfect and rare combination of our hands-on industry experience and technical expertise enables us to
+            deliver the most innovative IT solutions and services, smoothly, seamlessly and efficiently. Allow our team
+            to help you accelerate your organizational transition to the Internet of Things and create an interconnected
+            business environment that enables you to enjoy unified collaboration between teams scattered across the
+            globe and make timely decisions without any delay</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="connectus">
+      <h4 class="text-center text-light">
+        For more information about the Artificial Intelligence, Machine Learning and Data Science or service assistance,
+        get in touch with us today! We offer innovative and world-class services at competitive prices. Allow our
+        experts to help you through the process and adopt this promising technology into your current organizational
+        landscape. Our friendly team is available at your assistance. Contact us now!</h4>
+      <div class="connectbtn"><button>CONNECT US NOW!</button></div>
+    </div>
+  </div>
+  <!-- ============------Body end-----============= -->
+  </div>
+  <!-- ======footer===== -->
+  <footer>
+    <div class="container">
+      <div class="footerContent py-4 text-center"> © Copyright 2022 KBS Solutions LLC. All Rights Reserved. </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

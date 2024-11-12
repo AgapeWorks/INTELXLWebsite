@@ -1,0 +1,1317 @@
+/* ==========off-canvas======== */
+/* =============carousel================= */
+#carouselExampleDark {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    max-height: 80vh;
+    width: 100vw !important;
+    object-fit: fill;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-indicators {
+    margin-bottom: 0px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #0d6efd;
+}
+
+.carousel-caption {
+    position: absolute;
+    transform: translateY(-50%);
+    height: fit-content;
+}
+
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+    filter: none;
+}
+
+.carousel-dark .carousel-control-next-icon {
+    background-image: url('img/arrow/arrow.png');
+    transform: scaleX(-1);
+}
+
+.carousel-control-prev-icon {
+    background-image: url('img/arrow/arrow.png');
+}
+
+.captions {
+    text-align: start;
+}
+
+@keyframes captionText1 {
+    0% {
+        margin-left: 15%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+
+
+@keyframes captionText2 {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        margin-left: 12.5%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0%
+    }
+}
+
+.text-2 {
+    font-size: 3vw;
+    font-weight: 700;
+    font-family:'Publico Headline Web',sans-serif;
+    margin-left: 0%;
+    color: #fff;
+}
+
+@keyframes captionline {
+
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    70% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 33vw;
+    }
+}
+
+.captions :nth-child(3) {
+    animation: captionline 1.8s linear;
+}
+
+.captions :nth-child(4) {
+    height: 2.5vw;
+    position: relative;
+}
+
+@keyframes captionText3 {
+
+    0% {
+        top: 200%;
+        opacity: 0;
+    }
+
+    70% {
+        top: 200%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+.captions :nth-child(4)>div {
+    font-size: 1.5vw;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    animation: captionText3 2s linear;
+}
+
+.captions :nth-child(5) {
+    position: relative;
+}
+
+@keyframes captionbuttton {
+
+    0% {
+        top: 100px;
+        opacity: 0;
+    }
+
+    70% {
+        top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+.captions :nth-child(5) button {
+    font-size: 1vw;
+    background-color: #21479b;
+    padding: 1vw;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    animation: captionbuttton 2.4s linear;
+}
+
+.captions2 img {
+    width: 5vw;
+}
+
+@keyframes caption2Text1 {
+    0% {
+        opacity: 0;
+        margin-left: 25%;
+    }
+
+    50% {
+        opacity: 0;
+        margin-left: 25%;
+    }
+
+    100% {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.captions2 .text-1 {
+    color: #fff;
+    font-size: 4vw;
+    margin-left: 0%;
+    font-weight: bold;
+}
+
+.text-1 {
+    animation: caption2Text1 .8s linear;
+}
+
+@keyframes caption2Text2 {
+    0% {
+        opacity: 0;
+        margin-left: 50%;
+    }
+
+    80% {
+        opacity: 0;
+        margin-left: 30%;
+    }
+
+    100% {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.captions2 .text-2 {
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 0%;
+    white-space: nowrap;
+}
+
+.text-2 {
+    animation: caption2Text2 1.2s linear;
+}
+
+@keyframes caption2line {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    70% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 56vw;
+    }
+}
+
+.captions2 .line {
+    width: 56vw;
+    transform-origin: left left;
+    animation: caption2line 2.3s linear;
+}
+
+.captions2 :nth-child(3)>div:not(:nth-child(1)) img {
+    width: 50;
+}
+
+.caption2-logo img {
+    opacity: 1;
+}
+
+@keyframes caption2logoImg {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.caption2-logo .img-1 {
+    animation: caption2logoImg 2.6s linear;
+}
+
+.caption2-logo .img-2 {
+    animation: caption2logoImg 2.8s linear;
+}
+
+.caption2-logo .img-3 {
+    animation: caption2logoImg 3s linear;
+}
+
+.caption2-logo .img-4 {
+    animation: caption2logoImg 3.2s linear;
+}
+
+.caption2-logo .img-5 {
+    animation: caption2logoImg 3.4s linear;
+}
+
+.caption2-logo .img-6 {
+    animation: caption2logoImg 3.6s linear;
+}
+
+.caption2-logo .img-7 {
+    animation: caption2logoImg 3.8s linear;
+}
+
+.caption2-logo .img-8 {
+    animation: caption2logoImg 4s linear;
+}
+
+@keyframes caption2second {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.caption2-logo .second {
+    opacity: 1;
+    animation: caption2second 4s linear;
+}
+
+.carousel-caption .captions3 :nth-child(1),
+.carousel-caption .captions4 :nth-child(1),
+.carousel-caption .captions5 :nth-child(1) {
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #48dff5;
+}
+
+.carousel-caption .captions3 :nth-child(2),
+.carousel-caption .captions4 :nth-child(2),
+.carousel-caption .captions5 :nth-child(2) {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+@keyframes lineImg {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    70% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 40vw;
+    }
+}
+
+.lineimg {
+    width: 40vw;
+    animation: lineImg 2.3s linear;
+}
+
+
+@keyframes adImg {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-1>img {
+    animation: adImg 2.3s linear
+}
+
+.image-2>img {
+    animation: adImg 2.6s linear
+}
+
+.image-3>img {
+    animation: adImg 2.9s linear
+}
+
+.image-4>img {
+    animation: adImg 3.2s linear
+}
+
+.image-5>img {
+    animation: adImg 3.5s linear
+}
+
+.image-6>img {
+    animation: adImg 3.8s linear
+}
+
+.image-7>img {
+    animation: adImg 4.1s linear
+}
+
+.image-8>img {
+    animation: adImg 4.4s linear
+}
+
+.carousel-caption .captions3 .img,
+.carousel-caption .captions4 .img,
+.carousel-caption .captions5 .img {
+    width: 40vw;
+}
+
+.carousel-caption .captions3 .img div,
+.carousel-caption .captions4 .img div,
+.carousel-caption .captions5 .img div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-caption .captions3 .img div img,
+.carousel-caption .captions4 .img div img,
+.carousel-caption .captions5 .img div img {
+    width: 4vw;
+    opacity: 1;
+}
+
+/* ========services========= */
+
+
+
+.our-service-text,
+.our-team-text {
+    color: #009837;
+}
+.about-intxl{
+    background-color: #e6fde4;
+}
+
+
+/* =====banner==== */
+.banner {
+    position: relative;
+    padding: 80px;
+    padding-bottom: 180px;
+    object-fit: contain;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('img/banner.jpg') center/cover no-repeat;
+    filter: blur(4px);
+    /* Adjust the blur radius as needed */
+    z-index: -1;
+}
+
+.banner-text {
+    background-color: #38acec;
+}
+
+.banner .team {
+    border-bottom: 1px solid rgba(196, 219, 244, 0.5);
+    padding-bottom: 20px;
+    color: #21479b;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: clamp(30px, 3vw, 58px);
+}
+
+.banner .hints {
+    margin-bottom: calc(12pt + 36px);
+    text-align: center;
+    color: #777777;
+}
+
+.banner p {
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 30px;
+}
+.parallax{
+    min-height: 650px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-parallax {
+    /* The image used */
+    background-image: url("img/intelxl-bg.jpg");
+  
+    /* Set a specific height */
+  
+  }
+  .bot-parallax {
+    /* The image used */
+    background-image: url("img/Solve-Problems.jpg");
+  }
+  .about-parallax {
+    /* The image used */
+    background-image: url("img/Solve-Problems.jpg");
+  }
+/* ====offer========== */
+.offer {
+    /* background-image: linear-gradient(360deg, #95ce70 0%, 14.3625%, #a5d78e 28.7249%, 43.2149%, #b4e1a6 57.7049%, 70.8197%, #c9e9c0 83.9344%, 91.9672%, #f9fdfe 100%);
+    background-size: cover; */
+    padding: 50px;
+}
+@media screen and (max-width: 400px) {
+    .offer {
+        padding: 50px;
+    }
+}
+.offer-head {
+    color: #009837;
+    border-bottom: 1px solid rgba(76, 200, 238, 0.5);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 62px;
+}
+
+.offer p {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.offer-img div {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.offer-img h6 {
+    font-weight: 400;
+    font-size: clamp(25px, 2vw, 36px);
+}
+
+/* =====brands===== */
+
+.brands .our-brand {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 8.33333333%;
+}
+
+.brands .our-brand h2 {
+    color: #21479b;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(196, 219, 244, 0.5);
+}
+
+.brand-img div div {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brand-img div div img {
+    min-width: 80px;
+    width: 15vw;
+}
+
+.brand-img div .digitalWeb img {
+    min-width: 50px;
+    width: 8vw;
+}
+
+/* =========Form=========== */
+
+.last-heading h4 {
+    font-size: clamp(22px, 2vw, 30px);
+}
+
+.last-heading-p {
+    font-weight: 600;
+    color: #767474;
+    margin-bottom: 40px;
+}
+
+.detials h5 {
+    color: #009837;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detials p strong {
+    color: #009837;
+}
+
+.address {
+    padding-left: 10%;
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.42857;
+    color: #7d7b7b;
+}
+
+.icon-No i {
+    color: #009837;
+}
+
+.form-detials .form-control {
+    border-radius: 0px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #adafb1;
+}
+
+.form-detials form {
+    padding: 0px 10%;
+}
+
+.form-detials form div {
+    padding: 4px 4%;
+}
+
+.form-detials form {
+    color: #7c7c7c;
+}
+
+.form-detials .form-control {
+    padding: 2px 4px;
+}
+
+.form-detials .form-control:focus,
+.form-detials .form-select {
+    box-shadow: none;
+}
+
+.submitButton {
+    border: 1px solid #009837;
+    background: #009837;
+    margin-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    width: auto;
+}
+
+.submitButton:hover {
+    background: #1e743d;
+}
+
+.form-detials form .response-output {
+    padding: 15px;
+    background-color: #fcf8e3;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* =====footer====== */
+
+@media (max-width:992px) {
+    .address {
+        padding-left: 0%;
+    }
+
+    .form-detials form {
+        padding: 0;
+    }
+}
+
+/* ================================== */
+.background {
+
+    min-height: 60vh;
+    width: 100vw;
+    padding: 0vw 10vw 0vw 10vw;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #009837;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.content {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 400;
+    padding: 40px 0 40px 0;
+    /* text-align: justify; */
+}
+
+/* ================================================================== */
+/* ====================-----------About----------==================== */
+/* ================================================================== */
+
+.aboutBody .main {
+    background: #fff;
+}
+
+.aboutBody .chartLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@keyframes chartLine {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.aboutBody .chartLine i {
+    font-size: 50px;
+    border-radius: 50%;
+    color: #5AA1E3;
+    background: #ebebeb;
+    padding: 30px;
+    transform: scale(1);
+    animation: chartLine .6s ease-in-out;
+}
+
+/* ================================================================== */
+/* ============------Services - software Development-----============ */
+/* ====================------Services - AI-----====================== */
+/* ====================------Services - Workfore-----====================== */
+/* ================================================================== */
+.heading {
+    color: #009837;
+}
+
+.mainimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainimage img {
+    width: 1200px;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.cardanim h3 {
+    color: #009837;
+    font-weight: 400;
+    font-size: calc(1.375rem + 0.7vw);
+    line-height: 42px;
+}
+
+.softdevopsbody .main .first,
+.consultingservicebody .main .first {
+    background-color: #fff;
+}
+
+.softdevopsbody .main .second,
+.consultingservicebody .main .second {
+    background: #F0F0F0;
+}
+
+@keyframes connectcard {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.card-img-top {
+    animation: connectcard .4s linear infinite;
+}
+
+.softdevopsbody .main .second .card,
+.consultingservicebody .main .second .card {
+    position: relative;
+    border-radius: 0px;
+    transform: translateY(0px);
+}
+
+.softdevopsbody .main .second .card-body,
+.softdevopsbody .main .second img,
+.consultingservicebody .main .second .card-body,
+.consultingservicebody .main .second img {
+    height: 225px;
+}
+
+.softdevopsbody .main .second p,
+.consultingservicebody .main .second p {
+    margin-bottom: 30px;
+}
+
+.softdevopsbody .main .second a.btn-primary,
+.consultingservicebody .main .second a.btn-primary {
+    background-color: #009837;
+    border: 0;
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.softdevopsbody .main .second .card-title a,
+.consultingservicebody .main .second .card-title a {
+    text-decoration: none;
+    color: #009837;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.softdevopsbody .main .second .card-title a:hover,
+.consultingservicebody .main .second .card-title a:hover {
+    color: #1e743d;
+}
+
+.connectus {
+    background: #009837;
+}
+
+.contactUs .connectus h2 {
+    font-weight: 700;
+    font-size: clamp(18px, 1.6vw, 1.6vw);
+}
+
+.softdevopsbody .connectus h4,
+.AIbody .connectus h4,
+.consultingservicebody .connectus h4 {
+    font-weight: 700;
+    font-size: clamp(16px, 1.1vw, 1.1vw);
+    padding: 0px 1vw;
+}
+
+.connectus .connectbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connectbtn button {
+    border: 0;
+    padding: 15px 30px;
+    font-size: clamp(10px, 1vw, 16px);
+}
+
+@keyframes btnhover {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.connectbtn button:hover {
+    transform: scale(1);
+    animation: btnhover .5s ease-in-out;
+}
+
+/* ====================------Services - AI-----====================== */
+.AIbody .main {
+    background-color: #fff;
+}
+
+.AIbody .main h3 {
+    color: #21479b;
+    font-size: clamp(18px, 2vw, 25px);
+}
+
+.AIbody .main h4 {
+    color: #21479b;
+    font-size: clamp(16px, 2vw, 23px);
+}
+
+.AIbody .main li {
+    color: #21479b;
+    font-size: clamp(12px, 2vw, 18px);
+}
+
+/* ====================------Our Clients-----====================== */
+.Client ol li a {
+    text-decoration: none;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #fff;
+}
+
+.Client .first {
+    background-color: #000;
+    border-bottom: 5px solid #cccccc;
+    padding: 0px 20vw;
+}
+
+.Client .ourClient h3 {
+    border-bottom: 5px solid #0088cc;
+    color: #fff;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: -5px;
+}
+
+/* .insidenav ul{
+    border:0.5px solid #ddd;
+    margin:15px;
+    max-width:250px;
+    padding-left:0px;
+    border-radius: 5px;
+}
+.insidenav ul li{
+    border-bottom:0.5px solid #ddd;
+    list-style-type: none;
+    padding:5px;
+    margin:5px;
+}
+.insidenav ul li:not(:first-child):hover{
+    background-color: #0077b3;
+}
+.insidenav ul li:not(:first-child){
+    cursor: pointer;
+}
+.insidenav ul li:first-child{
+padding:10px;
+margin:0px;
+cursor: default;
+}
+.insidenav ul li:nth-child(4) i{
+    float:right;
+    padding-right:4px;
+    padding-top:4px;
+}
+.insidenav ul li:last-child{
+    border:0;
+} */
+/* .insidenav ul li:hover{
+    background-color: #0077b3;
+    color:#fff;
+}
+.insidenav ul li:nth-child(3) i{
+    float:right;
+    padding-right:4px;
+    padding-top:4px;
+}
+.insidenav ul li{
+    padding:0;
+}
+.insidenav ul li a{
+    padding:200px 10px;
+} */
+#clients div img {
+    width: 90%;
+    max-width: 200px;
+    margin: 20px;
+}
+
+/* ===================------Case studies-----===================== */
+.Client {
+    min-height: 80vh;
+}
+
+.caseStudies .main img,
+.caseStudies .main .card-body {
+    height: 260px;
+}
+
+.caseStudies .main .card-body div:nth-child(1) {
+    height: 180px;
+    overflow: hidden;
+}
+
+.caseStudies .main .card-body div:nth-child(1) h5 {
+    font-size: clamp(16px, 1.1vw, 25px);
+    color: #4cc8ee;
+}
+
+.caseStudies .main .card-body div:nth-child(1) p {
+    font-size: clamp(14px, 1vw, 16px);
+    color: #636161;
+}
+
+.caseStudies .main {
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.caseStudies .main>div {
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+.caseStudies .main .card .btn-primary {
+    border: 2px solid #565555;
+    border-radius: 0px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+}
+
+/* ====================------Contact Us-----====================== */
+
+.map iframe {
+    width: 100%;
+    padding: 15px;
+    min-height: 150px;
+    height: 40vh;
+}
+
+.contactUs .main {
+    background-color: #fff;
+}
+
+.contactUs .detials h3,
+.contactUs .detials h4 {
+    color: #21479b;
+}
+
+.contactUs .form-detials form div {
+    padding: 3px 1%;
+}
+
+.contactUs .form-detials form .response-output {
+    padding: 15px;
+}
+
+@keyframes leftanim {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes rightanim {
+    0% {
+        opacity: 0;
+        margin-left: -10%;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+.leftanim {
+    opacity: 1;
+    margin-bottom: 0%;
+    animation: leftanim .5s linear;
+}
+
+rightanim {
+    opacity: 1;
+    animation: rightanim .5s linear;
+}
+
+.offcanvas-link {
+    color: white;
+    transition: none;
+}
+.disabled-item {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+.offcanvas-header button {
+    border: 0;
+    color: #fff;
+}
+
+@keyframes bottomcard {
+    0% {
+        opacity: 0;
+        margin-bottom: -10%;
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+}
+
+.bottomcard {
+    opacity: 1;
+    animation: bottomcard .5s linear;
+}
+
+.us-address,
+.ind-address,
+.mail-id,
+.mob-num {
+    text-decoration: none;
+    color: #000;
+}
+
+.us-address:hover,
+.ind-address:hover,
+.mail-id:hover,
+.mob-num:hover {
+    color: #0063ff;
+}
+
+.contact-card {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.home-card {
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    min-height: 257px;
+    margin-top: 20px;
+
+}
+
+.cntnt-bdy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-card:hover .card-ovrly {
+    bottom: 0;
+    height: 100%;
+}
+
+.card-ovrly {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    background-color: #474d4fed;
+}
+
+.ovrly-txt {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.course-cndnt{
+    min-height: 303px;
+    box-shadow: 3px 2px 18px 0px;
+    background-color: #fff;
+}
+.vision-txt{
+    text-align: left;
+}
+.contact-detail{
+    padding: 80px;
+}
+.middle-image{
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+.middle-image > a {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    padding: 0;
+    margin: 0;
+}
+.middle-image > a:hover {
+    transform: scale(1.2);
+}
+.abt-btn a{
+    text-decoration: none;    
+    color: #fff;
+}
+.abt-btn:hover{
+    background-color: transparent;
+
+}
+.abt-btn:hover a{
+    color: #ffffff;
+    
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.caption-txt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 50%; /* Adjusted top value for better centering */
+    display: flex;
+    flex-direction: column; /* Added to stack child elements vertically */
+    align-items: center; /* Center items horizontally */
+    color: #fff;
+}
+.service-txt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 80%; /* Adjusted top value for better centering */
+    display: flex;
+    flex-direction: column; /* Added to stack child elements vertically */
+    align-items: center; /* Center items horizontally */
+    color: #fff;
+}
+@keyframes moveY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px); /* Adjust the distance as needed */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.arrow1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    animation: moveY 2s linear infinite;
+}
+#bg-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
